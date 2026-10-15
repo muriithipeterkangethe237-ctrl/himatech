@@ -1,0 +1,28 @@
+<svg width="1400" height="360" viewBox="0 0 1400 360" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <defs>
+    <linearGradient id="bannerBg" x1="0" y1="0" x2="1400" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#061F2A"/>
+      <stop offset="1" stop-color="#0C2E3C"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0" y1="0" x2="600" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7CF7B3"/>
+      <stop offset="1" stop-color="#3AD1FF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="360" rx="28" fill="url(#bannerBg)"/>
+  <g transform="translate(52 40)">
+    <circle cx="140" cy="140" r="118" stroke="url(#brandGrad)" stroke-width="6" fill="none"/>
+    <circle cx="140" cy="140" r="96" stroke="#9CF2FF" stroke-width="2" fill="none" opacity="0.8"/>
+    <path d="M132 89L188 64L232 90L226 134L193 183L148 213L104 181L86 122L132 89Z" fill="none" stroke="#CFFBFF" stroke-width="3"/>
+    <path d="M143 95L180 118L182 148L164 165L142 173L124 165L110 149L104 128L115 110L143 95Z" fill="#0A2432" stroke="#7AF7B1" stroke-width="2"/>
+    <path d="M124 164L149 179L173 191L198 186L220 202L231 229L206 248L174 244L150 230L127 206L108 184L124 164Z" fill="#0A2432" stroke="#7AF7B1" stroke-width="2"/>
+  </g>
+
+  <g transform="translate(420 75)">
+    <text x="0" y="92" font-size="76" font-weight="800" font-family="Segoe UI, Arial, sans-serif" fill="url(#brandGrad)" letter-spacing="2">HEMITECH</text>
+    <text x="2" y="166" font-size="52" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#D9FBFF" letter-spacing="5">KENYA</text>
+    <text x="0" y="220" font-size="24" font-weight="600" font-family="Segoe UI, Arial, sans-serif" fill="#B7F1FF" letter-spacing="4">CONNECTING AFRICA'S FUTURE</text>
+    <text x="0" y="262" font-size="20" font-weight="500" font-family="Segoe UI, Arial, sans-serif" fill="#DFFAFD" letter-spacing="1.5">hemitechkenya@gmail.com</text>
+  </g>
+</svg>

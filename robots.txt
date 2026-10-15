@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://muriithipeterkangethe237-ctrl.github.io/HEMITECH-KENYA/sitemap.xml

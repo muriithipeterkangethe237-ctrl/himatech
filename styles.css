@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
@@ -123,6 +124,26 @@ h1, h2 { font-family: var(--font-heading); letter-spacing: -.055em; }
 .product-actions .order-button:hover { background: #08796f; }
 .document-link { color: var(--teal); font-size: 9px; font-weight: 700; }
 .document-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+.hardware-gallery { margin-top: 72px; padding-top: 45px; border-top: 1px solid var(--line); }
+.gallery-heading { display: flex; align-items: end; justify-content: space-between; gap: 32px; margin-bottom: 25px; }
+.gallery-heading .eyebrow { margin-bottom: 11px; }
+.gallery-heading h3 { margin-bottom: 0; font-family: var(--font-heading); font-size: clamp(27px, 3vw, 36px); letter-spacing: -.045em; }
+.gallery-heading h3 span { color: var(--teal); }
+.gallery-heading > p { max-width: 350px; margin-bottom: 3px; color: var(--muted); font-size: 12px; line-height: 1.7; }
+.gallery-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 13px; }
+.gallery-filter { min-height: 36px; padding: 0 13px; border: 1px solid var(--line); border-radius: 3px; color: var(--muted); background: var(--white); font-size: 10px; font-weight: 700; cursor: pointer; }
+.gallery-filter:hover, .gallery-filter:focus-visible { border-color: var(--teal); color: var(--teal); }
+.gallery-filter.is-active { border-color: var(--teal); color: var(--white); background: var(--teal); }
+.gallery-filter:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+.gallery-count { margin-bottom: 15px; color: var(--muted); font-size: 10px; }
+.hardware-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.hardware-card { min-width: 0; display: flex; flex-direction: column; padding: 0 0 17px; border: 1px solid var(--line); background: #fbfdfc; }
+.hardware-card[hidden] { display: none; }
+.hardware-card > img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #edf3f1; }
+.hardware-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px; margin: 14px 14px 9px; color: var(--teal); font-size: 8px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; }
+.hardware-meta span + span { color: #75898d; text-align: right; }
+.hardware-card h4 { margin: 0 14px 7px; font-family: var(--font-heading); font-size: 14px; letter-spacing: -.025em; }
+.hardware-card > p { margin: 0 14px; color: var(--muted); font-size: 10px; line-height: 1.65; }
 .price-guide { margin-top: 12px; border: 1px solid var(--line); background: #fbfdfc; }
 .price-guide > summary { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 21px; cursor: pointer; list-style: none; }
 .price-guide > summary::-webkit-details-marker { display: none; }
@@ -197,6 +218,7 @@ h1, h2 { font-family: var(--font-heading); letter-spacing: -.055em; }
   .consultation-banner { grid-template-columns: auto 1fr; }
   .consultation-banner .button { grid-column: 2; justify-self: start; }
   .product-grid { grid-template-columns: 1fr 1fr; }
+  .hardware-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 @media (max-width: 680px) {
   .container { width: min(100% - 36px, 520px); }
@@ -233,6 +255,10 @@ h1, h2 { font-family: var(--font-heading); letter-spacing: -.055em; }
   .service-grid { grid-template-columns: 1fr; gap: 10px; }
   .service-card { min-height: 240px; padding: 24px; }
   .product-grid { grid-template-columns: 1fr; }
+  .hardware-grid { grid-template-columns: 1fr 1fr; gap: 9px; }
+  .gallery-heading { align-items: flex-start; flex-direction: column; gap: 12px; }
+  .hardware-meta { margin-inline: 10px; font-size: 7px; }
+  .hardware-card h4, .hardware-card > p { margin-inline: 10px; }
   .product-card > p:not(.product-note) { min-height: 0; }
   .price-guide > summary { padding-inline: 14px; }
   .price-content { padding-inline: 12px; }
@@ -252,4 +278,8 @@ h1, h2 { font-family: var(--font-heading); letter-spacing: -.055em; }
   .contact h2 { font-size: 48px; }
   .footer-inner { flex-wrap: wrap; }
   .footer-inner p { order: 3; flex-basis: 100%; }
+}
+
+@media (max-width: 420px) {
+  .hardware-grid { grid-template-columns: 1fr; }
 }

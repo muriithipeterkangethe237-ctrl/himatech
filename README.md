@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <a href="https://muriithipeterkangethe237-ctrl.github.io/HEMITECH-KENYA/">Visit the live Hemitech Kenya website</a>
+  <a href="https://muriithipeterkangethe237-ctrl.github.io/himatech/">Visit the live Hemitech Kenya website</a>
 </p>
 
 <p align="center">

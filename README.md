@@ -18,6 +18,26 @@
   <a href="https://muriithipeterkangethe237-ctrl.github.io/himatech/">Visit the live Hemitech Kenya website</a>
 </p>
 
+## Run locally with Python
+
+Install Flask and start the local website:
+
+```powershell
+python -m pip install -r requirements.txt
+python server.py
+```
+
+Then open http://127.0.0.1:8000. Stop the server with `Ctrl+C`. GitHub Pages
+continues to serve the static website; it does not run the Flask server.
+
+## Android app
+
+The Android Studio project is in `android-app`. Open that folder in Android
+Studio, let Gradle sync, then select an Android device or emulator and click
+**Run**. The app displays the live website and needs an internet connection;
+WhatsApp, email, phone, and other external links open with the relevant Android
+app when available.
+
 <p align="center">
   <a href="#overview">Overview</a> ·
   <a href="#solutions">Solutions</a> ·
@@ -46,6 +66,8 @@ Hemitech Kenya delivers dependable networking, wireless systems, and resilient i
 ## Overview
 
 We help organizations build secure, scalable, and high-performing technology environments through expert network design, wireless deployment, connectivity support, and power-backed infrastructure planning. Our work is built around uptime, efficiency, and measurable operational reliability.
+
+Visitors can share site or equipment photos and short videos with the team through WhatsApp. Media is sent directly in WhatsApp and is not uploaded to or stored by the static website.
 
 ## Why choose us
 

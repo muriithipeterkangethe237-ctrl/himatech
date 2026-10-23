@@ -31,3 +31,20 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Android build outputs
+android-app/.gradle/
+android-app/local.properties
+android-app/**/build/
+android-app/.idea/
+android-app/*.iml
+android-app/captures/
+android-app/.externalNativeBuild/
+android-app/.cxx/
+android-app/*.jks
+android-app/*.keystore

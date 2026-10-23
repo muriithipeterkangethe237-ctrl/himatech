@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Hemitech Kenya</string>
+    <string name="no_app_for_link">No app is available to open this link.</string>
+</resources>

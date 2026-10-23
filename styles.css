@@ -1,4 +1,6 @@
 
+python -m pip install -r requirements.txt
+python server.py
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
@@ -140,6 +142,9 @@ h1, h2 { font-family: var(--font-heading); letter-spacing: -.055em; }
 .hardware-card { min-width: 0; display: flex; flex-direction: column; padding: 0 0 17px; border: 1px solid var(--line); background: #fbfdfc; }
 .hardware-card[hidden] { display: none; }
 .hardware-card > img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #edf3f1; }
+.hardware-whatsapp { min-height: 34px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; margin: 11px 12px 0; border-radius: 4px; color: var(--white, #fff); background: var(--teal, #1d9b8e); font-size: 10px; font-weight: 700; transition: background .2s ease; }
+.hardware-whatsapp:hover { background: #08796f; }
+.hardware-whatsapp:focus-visible { outline: 2px solid var(--teal, #1d9b8e); outline-offset: 2px; }
 .hardware-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px; margin: 14px 14px 9px; color: var(--teal); font-size: 8px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; }
 .hardware-meta span + span { color: #75898d; text-align: right; }
 .hardware-card h4 { margin: 0 14px 7px; font-family: var(--font-heading); font-size: 14px; letter-spacing: -.025em; }
@@ -187,6 +192,13 @@ h1, h2 { font-family: var(--font-heading); letter-spacing: -.055em; }
 .technology p { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 10px; margin-bottom: 0; color: #496168; font-size: 10px; font-weight: 600; }
 .technology i { width: 3px; height: 3px; border-radius: 50%; background: var(--teal); }
 
+.media-share { background: #f0f6f4; }
+.media-share-inner { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 90px; }
+.media-share h2 { margin-bottom: 0; font-size: clamp(40px, 4.5vw, 56px); line-height: 1.1; }
+.media-share h2 span { color: var(--teal); }
+.media-share-copy > p { max-width: 520px; color: #496168; font-size: 13px; line-height: 1.8; }
+.media-share-copy .media-share-note { margin-bottom: 23px; color: #687e82; font-size: 11px; }
+
 .contact { color: var(--white); background: #0a2c37; }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 90px; }
 .contact h2 { margin-bottom: 19px; font-size: clamp(43px, 5vw, 62px); line-height: 1.08; }
@@ -213,7 +225,7 @@ h1, h2 { font-family: var(--font-heading); letter-spacing: -.055em; }
   .orbit-one { right: -110px; }
   .orbit-two { right: -45px; }
   .hero-content { max-width: 650px; margin-left: max(24px, calc((100% - 1160px) / 2)); }
-  .coverage-grid, .contact-grid { gap: 50px; }
+  .coverage-grid, .contact-grid, .media-share-inner { gap: 50px; }
   .service-card { padding-inline: 20px; }
   .consultation-banner { grid-template-columns: auto 1fr; }
   .consultation-banner .button { grid-column: 2; justify-self: start; }
@@ -246,7 +258,7 @@ h1, h2 { font-family: var(--font-heading); letter-spacing: -.055em; }
   .orbit-two { top: 335px; right: -175px; width: 350px; height: 350px; }
   .hero-bottom { gap: 8px; font-size: 7px; letter-spacing: .06em; }
   .section-pad { padding: 75px 0; }
-  .intro-grid, .coverage-grid, .contact-grid { grid-template-columns: 1fr; gap: 28px; }
+  .intro-grid, .coverage-grid, .contact-grid, .media-share-inner { grid-template-columns: 1fr; gap: 28px; }
   .intro h2, .section-heading h2, .coverage h2 { font-size: 40px; }
   .intro-copy p { font-size: 13px; }
   .value-row { grid-template-columns: 1fr; gap: 20px; margin-top: 43px; }

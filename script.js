@@ -23,6 +23,28 @@ const galleryFilters = document.querySelectorAll(".gallery-filter");
 const hardwareCards = document.querySelectorAll(".hardware-card");
 const galleryCount = document.querySelector(".gallery-count");
 
+hardwareCards.forEach((card) => {
+  const image = card.querySelector(":scope > img");
+  const productName = card.querySelector("h4")?.textContent?.trim();
+
+  if (!image || !productName) return;
+
+  const whatsappLink = document.createElement("a");
+  whatsappLink.className = "hardware-whatsapp";
+  whatsappLink.href = `https://wa.me/254717173810?text=${encodeURIComponent(`Hello Hemitech Kenya, please share details and a quote for ${productName}.`)}`;
+  whatsappLink.target = "_blank";
+  whatsappLink.rel = "noopener noreferrer";
+  whatsappLink.setAttribute("aria-label", `Ask about ${productName} on WhatsApp`);
+  whatsappLink.append("Ask on WhatsApp ");
+
+  const arrow = document.createElement("span");
+  arrow.setAttribute("aria-hidden", "true");
+  arrow.textContent = "↗";
+  whatsappLink.append(arrow);
+
+  image.insertAdjacentElement("afterend", whatsappLink);
+});
+
 if (galleryFilters.length && hardwareCards.length && galleryCount) {
   galleryCount.textContent = `Showing ${hardwareCards.length} products`;
 

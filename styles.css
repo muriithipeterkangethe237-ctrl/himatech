@@ -142,6 +142,9 @@ h1, h2 { font-family: var(--font-heading); letter-spacing: -.055em; }
 .hardware-card { min-width: 0; display: flex; flex-direction: column; padding: 0 0 17px; border: 1px solid var(--line); background: #fbfdfc; }
 .hardware-card[hidden] { display: none; }
 .hardware-card > img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #edf3f1; }
+.hardware-card-visual { aspect-ratio: 4 / 3; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 18px; color: var(--white); background: linear-gradient(145deg, #0b3440, #126f70); text-align: center; }
+.hardware-card-visual span { color: #a9ddd3; font-size: 9px; font-weight: 800; letter-spacing: .16em; }
+.hardware-card-visual strong { font-family: var(--font-heading); font-size: clamp(14px, 1.5vw, 21px); letter-spacing: -.03em; overflow-wrap: anywhere; }
 .hardware-whatsapp { min-height: 34px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; margin: 11px 12px 0; border-radius: 4px; color: var(--white, #fff); background: var(--teal, #1d9b8e); font-size: 10px; font-weight: 700; transition: background .2s ease; }
 .hardware-whatsapp:hover { background: #08796f; }
 .hardware-whatsapp:focus-visible { outline: 2px solid var(--teal, #1d9b8e); outline-offset: 2px; }
@@ -149,6 +152,12 @@ h1, h2 { font-family: var(--font-heading); letter-spacing: -.055em; }
 .hardware-meta span + span { color: #75898d; text-align: right; }
 .hardware-card h4 { margin: 0 14px 7px; font-family: var(--font-heading); font-size: 14px; letter-spacing: -.025em; }
 .hardware-card > p { margin: 0 14px; color: var(--muted); font-size: 10px; line-height: 1.65; }
+.hardware-specs { display: grid; gap: 6px; margin: 0 14px 10px; padding: 0; color: var(--muted); font-size: 9px; line-height: 1.5; list-style: none; }
+.hardware-specs li { padding-left: 12px; position: relative; }
+.hardware-specs li::before { position: absolute; left: 0; color: var(--teal); content: "•"; }
+.hardware-source { margin: 10px 14px 0; color: var(--teal); font-size: 9px; font-weight: 700; }
+.hardware-source:hover { text-decoration: underline; text-underline-offset: 3px; }
+.hardware-card--catalog .hardware-whatsapp { margin-top: 10px; }
 .price-guide { margin-top: 12px; border: 1px solid var(--line); background: #fbfdfc; }
 .price-guide > summary { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 21px; cursor: pointer; list-style: none; }
 .price-guide > summary::-webkit-details-marker { display: none; }
@@ -270,7 +279,8 @@ h1, h2 { font-family: var(--font-heading); letter-spacing: -.055em; }
   .hardware-grid { grid-template-columns: 1fr 1fr; gap: 9px; }
   .gallery-heading { align-items: flex-start; flex-direction: column; gap: 12px; }
   .hardware-meta { margin-inline: 10px; font-size: 7px; }
-  .hardware-card h4, .hardware-card > p { margin-inline: 10px; }
+  .hardware-card h4, .hardware-card > p, .hardware-specs { margin-inline: 10px; }
+  .hardware-source { margin-inline: 10px; }
   .product-card > p:not(.product-note) { min-height: 0; }
   .price-guide > summary { padding-inline: 14px; }
   .price-content { padding-inline: 12px; }
